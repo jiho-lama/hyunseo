@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>현서에게 바치는 용돈</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0; /* 배경색 */
+            display: flex;
+            justify-content: center;
+            align-items: center; /* 화면 중앙 정렬 */
+            min-height: 100vh; /* 전체 화면 높이 사용 */
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            letter-spacing: -0.5px;
+        }
+
+        .card {
+            width: 340px;
+            background-color: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        /* 상단 노란 영역 */
+        .header {
+            background-color: #FFEB00;
+            padding: 25px 20px 0 20px;
+            height: 125px;
+            position: relative;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 700;
+            color: #1a1a1a;
+        }
+
+        /* 춘식이 캐릭터 이미지 (실제 이미지와 유사한 경로 사용) */
+        .character {
+            position: absolute;
+            right: 15px;
+            bottom: -5px;
+            width: 145px;
+            height: 110px;
+            background-image: url('https://t1.kakaocdn.net/kakaopay/kakao_pay_brand/p_main_character.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: bottom right;
+        }
+
+        /* 본문 텍스트 영역 */
+        .content {
+            padding: 30px 20px;
+        }
+
+        .amount {
+            font-size: 22px;
+            font-weight: 500;
+            color: #1a1a1a;
+            margin-bottom: 15px;
+        }
+
+        .description {
+            font-size: 16px;
+            color: #888888;
+            line-height: 1.5;
+            margin-bottom: 30px;
+        }
+
+        /* 용돈 받기 버튼 */
+        .btn-receive {
+            width: 100%;
+            background-color: #F6F6F6;
+            color: #1a1a1a;
+            border: none;
+            border-radius: 12px;
+            padding: 20px 0;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            text-align: center;
+            display: block; /* 링크처럼 동작하도록 */
+            text-decoration: none; /* 밑줄 제거 */
+        }
+
+        /* 하단 로고바 */
+        .footer {
+            border-top: 1px solid #F2F2F2;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+        }
+
+        .pay-icon {
+            width: 20px;
+            height: 20px;
+            background-color: #FFEB00;
+            border-radius: 5px;
+            margin-right: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 8px;
+            font-weight: bold;
+        }
+
+        .pay-text {
+            font-size: 16px;
+            font-weight: 700;
+            color: #555;
+        }
+
+        .arrow {
+            color: #ccc;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <div class="header">
+        <h1>용돈보내요</h1>
+        <div class="character"></div>
+    </div>
+    
+    <div class="content">
+        <div class="amount">현서에게 주는 용돈 50억 원</div>
+        <div class="description">
+            용돈 받기 전까지 보낸 분은 내역<br>
+            상세화면에서 취소할 수 있어요.
+        </div>
+        <a href="prank.html" class="btn-receive">송금 받기</a>
+    </div>
+
+    <div class="footer">
+        <div class="logo-section">
+            <div class="pay-icon">P</div>
+            <span class="pay-text">현서에게 바치는 용돈</span>
+        </div>
+        <span class="arrow">〉</span>
+    </div>
+</div>
+
+</body>
+</html>
